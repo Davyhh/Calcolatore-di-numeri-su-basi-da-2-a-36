@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    overflow:hidden;
+}
+
+
+html, body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #363732;
+}
+
+
+div{
+    display: flex;
+    height: 300px;
+    width:800px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #53D8FB;
+}
+
+input{
+    margin-top:20px;
+    font-size:20px;
+    height:40px;
+    width:750px;
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+
+    color:white;
+    font-size:25px;
+    
+}
