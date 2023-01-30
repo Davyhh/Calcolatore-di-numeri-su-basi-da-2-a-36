@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <script src="script.js"></script>
     <main>
         <div>
-            Inserisci il numero della base qui(2-36):
+            <p id="richiesta">Inserisci il numero della base qui(2-36):</p>
             <form>
-                <input type="text">
+                <input type="number" min="2" max="36">
             </form>
+            <button onclick="acquisisciValore(obj)">INVIA</button>
+            <p id="risultato">Risultato: ###</p>
         </div>
+
     </main>
 
     <footer>
         <p>Creato da Davide Rolfi</p>
     </footer>
+
 </body>
 </html>

@@ -31,6 +31,7 @@ input{
     font-size:20px;
     height:40px;
     width:750px;
+
 }
 
 footer{
@@ -40,4 +41,22 @@ footer{
     color:white;
     font-size:25px;
     
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+button{
+    margin-top:25px;
+    width:400px;
+    height:60px;
+    font-size:25px;
+    font-weight: bold;
+
+}
+
+#risultato{
+    display: none;
 }
