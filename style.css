@@ -93,4 +93,95 @@ a{
 
 ::placeholder{ 
     color: red;
-  }
+}
+
+@media screen and (max-width: 700px) and (min-width:400px) {
+    div{
+        height: 150px;
+        width:400px;
+        font-size: 20px;
+    
+        border: 2px solid black;
+        border-radius:2.5px;
+    
+    }
+
+    input{
+        height:20px;
+        width:375px;
+    
+        margin-top:10px;
+    
+        font-size:10px;
+    
+        border: 1px solid black;
+        border-radius:2.5px;
+    
+    }
+
+    button{
+        width:200px;
+        height:30px;
+    
+        margin-top:12.5px;
+        font-size:12.5px;
+        border-radius: 2.5px;
+    
+    }
+
+    button:hover{
+        font-size:15px;
+    }
+
+    #risultato{
+        margin-top: 5px;
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    div{
+        height: 100px;
+        width:267px;
+        font-size: 14px;
+    
+        border: 1.2px solid black;
+        border-radius:0.8px;
+    
+    }
+
+    input{
+        height:14px;
+        width:250px;
+    
+        margin-top:6.6px;
+    
+        font-size:6.6px;
+    
+        border: 0.66px solid black;
+        border-radius:0.83px;
+    
+    }
+
+    button{
+        width:133px;
+        height:20px;
+    
+        margin-top:8px;
+        font-size:8px;
+        border-radius: 0.83px;
+    
+    }
+
+    button:hover{
+        font-size:10px;
+    }
+
+    #risultato{
+        margin-top: 3.3px;
+        font-size: 17px;
+    }
+    
+}
+

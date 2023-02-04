@@ -15,11 +15,17 @@ function main(obj){
         document.querySelector("input").value= null;
         richiesta.innerHTML= "Inserisci un numero:";
     }
-    else if(input.value<0 && input.value!=null && obj.basepresa){
+    else if(input.value<0 && obj.basepresa){
         input.value = null;
         input.style.border = "2px solid red";
         input.style.borderRadius = "5px";
-        input.placeholder = "Sono abbastanza pigro intellettualmente da non voler considerare i numeri negativi";
+        input.placeholder = "Non sono contemplati i numeri negativi!";
+    }
+    else if(input.value=="" && obj.basepresa){
+        input.value = null;
+        input.style.border = "2px solid red";
+        input.style.borderRadius = "5px";
+        input.placeholder = "Inserisci un numero, non puoi lasciar vuoto!";
     }
     else{ //input numero + calcolo e stampa risultato
         obj.numero= input.value;
@@ -50,7 +56,11 @@ let obj={
 function calcolo(base,numero){
     let ris= [];
     let i=0;
-    if(base<11){ //numero con cifre classiche
+    
+    if(numero==0){
+        ris[0]=0;
+    }
+    else if(base<11){ //numero con cifre classiche
         while(numero>0){
             ris[i] = numero%base;
             numero = parseInt(numero/base);
